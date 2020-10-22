@@ -1,0 +1,38 @@
+{% extends "sub_layout.html"%}
+
+{% block contents_left%} 
+<div class="blog-post">
+    <h2 class="blog-post-title bbs-title">Q&A - 글 상세보기</h2>          
+</div><!-- /.blog-post -->
+<table class="table">
+    <tbody>
+        <tr>
+            <td colspan="2">제목 : {{result.title}} </td>
+        </tr>
+        <tr>
+            <td>글쓴이 : {{result.name}} </td>
+            <td class="text-right">작성일 : {{result.regdate | datetime_format}}&nbsp;&nbsp;&nbsp; 조회수 : {{result.hit}}</td>
+        </tr>
+        <tr>
+            <td class="border-top-0" colspan="2">{% autoescape false %}{{result.contents}}{% endautoescape%}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- {{result.title}}<br>
+{{result.name}}<br>
+{{result.regdate | datetime_format}}<br>
+{{result.hit}}<br>
+{{result.contents}}<br> -->
+
+<p></p>
+<p>
+    <a href="{{url_for('board.list', page=page, search=search, keyword=keyword)}}" class="btn btn-success">리스트</a>
+    {% if session["id"] == result.writer_id %}
+    <a href="{{url_for('board.delete', idx=result.id)}}" class="btn btn-danger float-right ml-2">글삭제</a>
+    <a href="{{url_for('board.modify', idx=result.id)}}" class="btn btn-primary float-right">글수정</a>
+    {% endif %}
+</p>
+{% endblock contents_left%} 
+

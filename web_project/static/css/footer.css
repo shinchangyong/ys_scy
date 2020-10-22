@@ -1,0 +1,85 @@
+.footer {
+    padding: 40px 0;
+    margin-top: 50px;
+    color: #fff;
+    background: #000;
+  }
+  .footer .frame {
+    overflow: visible;
+  }
+  .frame {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0px auto;
+    clear: both;
+    padding: 0px 30px;
+    overflow: hidden;
+}
+  .footer .frame #scroll_topbtn_m {
+    right: 20px;
+    bottom: 70px;
+  }
+  .footer .frame #scroll_topbtn_m a {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .frame #scroll_topbtn_m a, .footer .frame #scroll_topbtn a {
+    display: block;
+  }
+  .footer .frame #scroll_topbtn, .footer .frame #scroll_topbtn_m {
+    position: fixed;
+    z-index: 99;
+  }
+  .footer .frame .footer_sec1 {
+    text-align: left;
+}
+.footer .frame .footer_sec1 span {
+    clear: both;
+    display: block;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.footer .frame .footer_sec1 a {
+    display: block;
+    float: left;
+    width: calc(50% - 8px);
+    margin: 0 8px 8px 0;
+    padding: 0 5px;
+    font-size: 1em;
+    line-height: 2.5em;
+    color: #d4d4d4;
+}
+.footer .frame .footer_sec1 a img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+.footer .frame .footer_sec2 {
+    padding: 10px 0 40px;
+    color: #8d8d8d;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+.footer .frame .footer_sec3 {
+    padding-top: 30px;
+    color: #8d8d8d;
+}
+.footer .frame .footer_sec3>div a {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 3em;
+    vertical-align: middle;
+}
+.footer .frame .footer_sec3>div .escrow-mark {
+    display: block;
+    float: right;
+    width: 50px;
+    margin: -10px 0 0 8px;
+}
+.footer .frame .footer_sec4 {
+    margin-top: 1em;
+}

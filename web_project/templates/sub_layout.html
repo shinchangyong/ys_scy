@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'head.html' %}
+</head>
+<body>
+    <header>
+    {% include 'nav.html' %}
+    </header>
+    <main role="main">
+        <div class="container-fluid sub-visual"></div>
+        <p></p>
+        <div class="container">
+            <div class="row" style="width: 1300px;">
+                <div class="col-md blog-main">       
+                    {% block contents_left %}
+                    {% endblock contents_left %}
+                </div> <!-- blog main -->
+                    
+            </div> <!-- row-->
+        </div>
+        {% include 'footer.html'%}
+    </main>
+</body>
+</html>

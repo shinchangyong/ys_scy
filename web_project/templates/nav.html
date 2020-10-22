@@ -1,0 +1,58 @@
+<div class="leftmenu">
+    <a href="{{url_for('home')}}">
+      <img class="center_logo" 
+      src="http://app-storage-edge-004.cafe24.com/bannermanage2/firstfloor/2020/08/03/58ad38fdba5fb688217bb1b36c6cefa5.png">
+    </a>
+
+<!-- <audio id="audio" autoplay>
+
+<source src="{{url_for('static', filename='mp3/aa.mp3')}}">
+</audio> -->
+    <audio id="audio" autoplay>
+      <source src="{{url_for('static', filename='mp3/aa.mp3')}}" type="audio/mp3">  
+    </audio>
+</div>
+<div data-v-745ba083="" class="uppermenu">
+   <a data-v-745ba083="" href="#">장바구니</a>
+   |
+  <a data-v-745ba083="" href="{{url_for('board.list')}}">Q&A</a>
+  |
+   <a data-v-745ba083="" href="#">마이페이지</a>
+  |
+   <a data-v-745ba083="" href="#">공지사항
+   </a>
+  |
+   <a data-v-745ba083="" href="{{url_for('member.member_join')}}">회원가입</a>
+  |
+   <a data-v-745ba083="" href="{{url_for('member.member_login')}}">로그인</a></div>
+
+<div class="nav-scroller py-1 mb-2">
+  <div id="search_box" class="xans-element- xans-layout xans-layout-searchheader schBox "><!--
+    $search_page = /product/search.html
+    $product_page = /product/detail.html
+  -->
+<fieldset class="div">
+    <input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text">
+    <input type="image" class="schBtn" src="https://www.meosidda.com/_m6/img/schBtn.png" alt="검색" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;">
+  &nbsp;</fieldset>
+</div>
+<div class="menu1">
+  <nav class="nav d-flex justify-content-between gnd m-auto">
+    <a class="p-2 text-muted-1" href="#">BEST</a>
+    <p class="line2">|</p>
+    <a class="p-2 text-muted" href="#">OUTER</a>
+    <p>|</p>
+    <a class="p-2 text-muted" href="#">TOP</a>
+    <p>|</p>
+    <a class="p-2 text-muted" href="#">SHIRT</a>
+    <p>|</p>
+    <a class="p-2 text-muted" href="#">BOTTOM</a>
+    <p>|</p>
+    <a class="p-2 text-muted" href="#">SHOES</a>
+    <p>|</p>
+    <a class="p-2 text-muted" href="#">ACCESSORY</a>
+    <p>|</p>
+    <a class="p-2 text-muted" href="#">CAP</a>
+</nav>
+</div>
+</div>

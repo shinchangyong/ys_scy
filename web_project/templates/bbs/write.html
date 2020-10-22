@@ -1,0 +1,28 @@
+{% extends "sub_layout.html"%}
+
+{% block contents_left%}
+  <div class="blog-post">
+    <h2 class="blog-post-title bbs-title">공지사항 - 글쓰기</h2>          
+  </div><!-- /.blog-post -->
+  <form action="{{url_for('board.board_write')}}" method="POST" name="form" onsubmit="return chk_form()">
+      <div class="form-group">
+          <label for="name">글쓴이</label>
+          <input class="form-control" type="text" name="name" id="name" size="28" value="{{session['name']}}" readonly>
+      </div>            
+      <div class="form-group">
+          <label for="title">제목</label>
+          <input class="form-control" type="text" name="title" id="title" size="28" placeholder="제목을 입력하세요.">
+      </div>
+      <div class="form-group">
+          <label for="summernote">내용</label>
+          <textarea class="form-control" name="contents" id="summernote" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+      </div>
+      <div class="custom-file col-md-4">
+        <input type="file" class="custom-file-input" id="customFile" name="attachFile">
+        <label for="customFile" class="custom-file-label">파일선택</label>
+    </div>
+    
+      <div class="text-center"><input class="btn btn-primary" type="submit" value="글쓰기"></div>
+  </form>
+
+{% endblock contents_left%}
